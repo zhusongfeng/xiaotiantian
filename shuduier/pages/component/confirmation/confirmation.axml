@@ -1,0 +1,79 @@
+<view class="container">
+  <navigator class='address1' url='../addressList/addressList?isback=true'>
+    <view class='icon_address'>
+      <image src='../../../image/address_03.png'></image>    
+    </view>
+    <view class='address_info' a:if="{{!address_mobile}}">点击添加地址 </view>
+    <view class='address_info' a:else>
+      <view>
+        <text decode="{{true}}">{{address_name}}&nbsp;&nbsp;&nbsp;</text>
+        <text>{{address_mobile}}</text>
+      </view>
+      <view style='clear:both'></view>
+      <view class="over">{{address_addressStr}}</view>
+    </view>
+    <view class='icon_back'>
+      <image src='../../../image/back.png'></image>
+    </view>
+  </navigator>
+  <image src="../../../image/pic.jpg" class="pics"/>
+  <navigator class="library" url="../cardList/cardList?isback=true">
+    <view class="cardImgs">
+      <image src="{{logo}}" />
+    </view>
+    <view class="texts1">
+      <view class="textInfo">
+        <view class="lirbraryName">{{orgname}}</view>
+      </view>
+      <view class="lirbraryNum"> 读者卡号：{{cardno}}</view>
+    </view>
+    <view class="cardPic back">
+      <image src="../../../image/back.png" />
+    </view>
+  </navigator>
+  <view class="allOrder">
+    <view class="orderDetail" onTap="click">
+      <view class="titles">
+        <view class="libraryName"></view>
+        <view class="statusName">图书信息</view>
+      </view>
+      <view class="bookItems">
+        <view class="book_images"><image src="{{coverimg}}" onError="errorCoverimg" data-errorimg="{{index}}"></image></view>
+        <view class="orderList">
+          <view class='book_names1 '>{{title}}</view>
+          <view class='book_authors1 '>作者：{{author}}</view>
+          <view class='book_presss1 '>国际标准书号ISBN：{{isbn}}</view>
+        </view>
+      </view>
+      <view class="notices">
+        <view class="word">留言</view>
+        <textarea placeholder="有什么悄悄话就写在这里吧..." onInput="remarkInput" class="eara" maxlength="-1" />
+      </view>
+    </view>
+  </view>
+  <view class="orderInfo">
+    <view class="orderDetail">
+      <view class="titles">
+        <view class="libraryName"></view>
+        <view class="statusName">借阅须知</view>
+      </view>
+        <view class="orderTime">
+          <text>借阅期限：</text>
+          <text>{{borrowperiod}}天</text>
+        </view>
+        <view class="orderTime">
+          <text>续借期限：</text>
+          <text> {{renewperiod}}天（可续借一次）</text>
+        </view>
+         <view class="orderTime">
+          <text>归还机构：</text>
+          <text>{{orgname}}</text>
+        </view>
+         <view class="orderTime">
+          <text>借阅规则：</text>
+          <text>您的图书卡一次可借阅{{maxborrow}}本书（线上+馆内），线上可一次借阅{{onlinemaxborrow}}本图书。为了保证线上借阅的正常进行，请您保证卡上借阅总数（线上+馆内）不超过{{maxborrow}}本，线上借阅数量不超过四本。</text>
+        </view>
+    </view>
+  </view>
+  <button type="" onTap="submit" class="borrowing">确认下单</button>
+</view>

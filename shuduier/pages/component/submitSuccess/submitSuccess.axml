@@ -1,0 +1,56 @@
+<view class="container">
+  <view class="head">
+    <view class="descript">
+      <image src="../../../image/pic1.png" />
+      <text decode="{{true}}">&nbsp;&nbsp;{{statusStr}}</text>
+    </view>
+    <view class="descript1">图书馆：{{orgName}}</view>
+    <view class="descript1">您的办证号：{{ecardorderno}}</view>
+    <view class="descript1" a:if="{{status==4}}">拒绝原因：{{reasonList}}</view>
+  </view>
+  <view class="content">
+    <view class="list">
+      <view class="leftList">姓名</view>
+      <view class="rightList">{{name}}</view>
+    </view>
+     <view class="list">
+      <view class="leftList">身份证号</view>
+      <view class="rightList">{{idno}}</view>
+    </view>
+     <view class="list">
+      <view class="leftList">职业</view>
+      <view class="rightList">{{job}}</view>
+    </view>
+     <view class="list">
+      <view class="leftList">学历</view>
+      <view class="rightList">{{education}}</view>
+    </view>
+     <view class="list">
+      <view class="leftList">电话号码</view>
+      <view class="rightList">{{mobile}}</view>
+    </view>
+     <view class="list">
+      <view class="leftList">联系地址</view>
+      <view class="rightList">{{address}}</view>
+    </view>
+  </view>
+  <view class="info">
+    <view class="leftList1">读者须知</view>
+    <view class="rightList1"><text style="padding-top:20rpx;display:inline-block;">1.借阅期限：通用借书证的借期为{{borrowperiod}}天，图书借期不超过{{borrowperiod}}天。\n</text>
+                            <text>2.借阅数量：每位读者在一个借阅周期内（通用借书证的借期内）最大借书量不超过{{maxborrow}}册。\n</text>
+                            <text>3.“通用借阅证”必须在原办证馆还回。\n</text>
+                            <text>4.如遇特殊情况，外借图书不论到期与否，各图书馆有权随时索回。\n</text>
+                            <text>5.其他未尽事宜参照《陕西省高校图书馆馆际互借服务规则》执行。\n</text>
+    </view>
+  </view>
+   <view class="list" style="margin:32rpx 0;" onTap="mobile">
+      <view class="leftList">客服热线</view>
+      <view class="rightList">400-128-0528</view>
+    </view>
+   <view class="btn" a:if="{{status==4}}"><view class="btns" onTap="onceClick">重新提交</view></view>
+   <view class="remind">
+    <view class="remindText">
+      <text>温馨提示:</text><text>办卡成功后，读者证及押金收据（不单独邮寄）将同您第一次在线借阅的图书一起邮寄给您。</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,104 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box; 
+}
+page{
+  height:100%;
+  background: white;
+}
+.head{
+  width:750rpx;
+  height:300rpx;
+  background: url(../../../image/head_02.jpg);
+}
+.descript{
+  color:rgb(245,245,245);
+  font-size:30rpx;
+  text-align: center;
+  padding-top: 50rpx;
+}
+.descript image{
+  width:30rpx;
+  height:30rpx;
+}
+.descript1{
+  color:rgba(245,245,245,0.8);
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.btns{
+  display: flex;
+  justify-content: space-between;
+  width: 340rpx;
+  height:50rpx;
+  margin:30rpx auto;
+}
+.order,.reader{
+  width:150rpx;
+  height:50rpx;
+  border:1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 4rpx;
+  opacity: 0.8;
+}
+.content{
+  width: 100%;
+  box-sizing: border-box;  
+  margin-top:32rpx;
+}
+.booklist{
+  width: 100%;
+}
+.flex-wrp{
+  width: 100%;
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  margin-top:50rpx;
+}
+.book-item{
+  width: 196rpx;
+  height:379rpx;
+}
+.book_image{
+  width: 185rpx;
+  height:267rpx;
+}
+.book_name,.book_author{
+  font-size: 28rpx;
+  overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+  line-height: 50rpx;
+}
+.book_author{
+  color: gray;
+  font-size: 24rpx;
+}
+.remind{
+  width:702rpx;
+  height:100rpx;
+  box-shadow: 0 0 8rpx #ededed;
+  background: white;
+  position: absolute;
+  top:250rpx;
+  left:24rpx;
+  z-index: 50;
+}
+.remindText{
+  padding:10rpx 28rpx;
+}
+.remindText text:nth-child(1){
+  color:rgb(230,75,18);
+  font-size: 24rpx;
+}
+.remindText text:nth-child(2){
+  color:rgb(51,51,51);
+  font-size: 24rpx;
+}

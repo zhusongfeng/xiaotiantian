@@ -1,0 +1,257 @@
+/**borrow.axss**/
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;  
+}
+.navigatorBarGroup{
+  width:750rpx;
+  height:92rpx;
+  background: white;
+  display: flex;
+  z-index: 101;
+}
+.lists{
+  width:125rpx;
+  text-align: center;
+  color: rgb(51,51,51);
+  margin:32rpx 0;
+}
+.page_bd{
+  width:85rpx;
+  color: rgb(51,51,51);
+  margin:32rpx 10rpx 32rpx 20rpx;
+  text-align: right;
+}
+.body_head{
+  border-left:2rpx solid #dddddd;  
+}
+.display_show{
+  display: block;
+  z-index: 110;
+  border-color: beige;
+}
+.display_none{
+  display: none;
+}
+.content{
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;  
+}
+.allOrder{
+  width:686rpx;
+  height:350rpx;
+  box-shadow: 0 0 34rpx #ededed;
+  background: white;
+  border-radius: 6rpx;
+  margin:16rpx auto 16rpx;
+}
+.orderDetail{
+  width:622rpx;
+  height:286rpx;
+  margin:32rpx;
+  position: relative;
+}
+.titles{
+  width:100%;
+  height:45rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:10rpx;
+}
+.libraryName{
+  color:rgb(51,51,51);
+  font-size: 28rpx;
+}
+.rightList{
+  width:125rpx;
+  height:40rpx;
+  display: flex;
+  justify-content: space-around;
+  line-height:40rpx;
+}
+.statusName{
+  color:rgb(230,75,18);
+  font-size: 28rpx;
+}
+.mine_list1{
+  width:27rpx;
+  height:29rpx;
+  margin:4rpx 0;
+}
+.imgs{
+  width:27rpx;
+  height: 29rpx;
+}
+.mine1{
+  width:100%;
+  height:100%;
+}
+.bookItems{
+  width:100%;
+  height:150rpx;
+  padding-bottom: 35rpx;
+}
+.bookItems::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.bookItems image{
+  width:104rpx;
+  float: left;
+  height:150rpx; 
+}
+.orderList{
+  width:477rpx;
+  padding-left:32rpx;
+  float:left;
+}
+.book_names1 {
+  color:rgb(51,51,51);
+  max-height: 80rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+}
+.book_authors1,.book_presss1{
+  color:rgb(153,153,153);
+  font-size: 25.5rpx;
+  line-height:40rpx;
+}
+.btns{
+  min-width:144rpx;
+  height:50rpx;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom:-15rpx;
+  right:0;
+}
+.btn,.btn1{
+  width:144rpx;
+  height:50rpx;
+  background: white;
+  border:1px solid rgb(230,75,18);
+  font-size: 26.5rpx;
+  text-align: center;
+  border-radius: 4rpx;
+  line-height: 50rpx;
+  margin-left:20rpx;
+  color: rgb(230,75,18);
+}
+.mask{
+  width: 100%;
+  height:5000rpx;  
+  z-index:110;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top:92rpx;
+  left:0;
+}
+.screen{
+  width:448rpx;
+  background: white;
+  z-index:111;
+  position: absolute;
+  top:0;
+  right:0;
+}
+.screenContent{
+  width:384rpx;
+  margin:20rpx auto 0;
+}
+button{
+  height:50rpx;
+  line-height: 50rpx;
+}
+.screenTitle{
+  float: left;
+  color:rgb(51,51,51);
+  font-size: 28rpx;
+  padding-bottom: 10rpx;
+}
+.screenWarn{
+  width: 100%;
+  color: rgb(153,153,153);
+  text-align: center;
+  font-size: 26rpx;
+  margin-bottom:20rpx;
+  background: rgb(245,245,245);
+}
+/* .twoBtn{
+  display: flex;
+  justify-content: space-between;
+} */
+.twoBtn button{
+  width:100%;
+  background: rgb(245,245,245);
+  color: rgb(153,153,153);
+  font-size: 24rpx;
+}
+.screenTitle1{
+  float: left;
+  color:rgb(51,51,51);
+  font-size: 28rpx;
+  padding: 20rpx 0 25rpx;
+}
+.screenWarn1{
+  width: 100%;
+  text-align: center;
+  font-size: 26rpx;
+  margin-bottom:20rpx;
+  background: rgb(245,245,245);
+  color: rgb(153,153,153);
+}
+.screenButtom{
+  display: flex;
+}
+.screenButtom button{
+  width:224rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background: rgb(245,245,245);
+  color: rgb(153,153,153);
+  text-align: center;
+  font-size: 28rpx;
+}
+.screenButtom button:nth-of-type(2){
+  background: rgb(230,75,18);
+  color: white;
+}
+.notMsg{
+  width: 500rpx;
+  height: 400rpx;
+  margin:200rpx auto 0rpx;
+}
+.notMsg image{
+  width: 500rpx;
+  height: 302rpx;
+}
+.notMsg view{
+  color: gray;
+  font-size: 30rpx;
+  text-align: center;
+}
+.on{ 
+  color: #dd2727;  
+}
+.swiper-box{
+  width:750rpx;
+
+}
+.infors{
+  margin-top:22rpx;
+  font-size: 30rpx;
+  text-align: center;
+  padding:0 20rpx;
+  color: rgb(51, 51, 51)
+}
+.logins text{
+  color: red;
+}

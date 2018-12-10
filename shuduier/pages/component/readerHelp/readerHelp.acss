@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;  
+}
+.conts{
+  width:686rpx;
+  height: 862rpx;
+  margin:0 auto;
+}
+.conts image{
+  width:100%;
+  height:100%;
+}
+.navView{
+  width:750rpx;
+  height:100rpx;
+  background: white;
+  color: rgb(51,51,51);
+  font-size: 30rpx;
+  padding-left:34rpx;
+  line-height: 100rpx;
+  border-top: 1px solid #ededed;
+  z-index: 112;
+}
+.conts1{
+  width:686rpx;
+  margin:0 auto;
+  color: rgb(51,51,51);
+  font-size: 30rpx;
+  padding: 25rpx 34rpx;
+  line-height: 40rpx;
+}
+.btns{
+  width: 686rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+  margin: 150rpx auto 0;
+  box-sizing: border-box;
+  background: rgb(213,86,43);
+}
+.texts{
+  padding:40rpx 80rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: white;
+}

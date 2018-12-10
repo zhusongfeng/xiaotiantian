@@ -1,0 +1,85 @@
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;  
+}
+.head{
+  width:750rpx;
+  height:174rpx;
+  margin:32rpx 0;
+  background: white;
+}
+.oneWord{
+  color: rgb(51,51,51);
+  font-size: 28rpx;
+  padding:32rpx 0 10rpx 32rpx;
+}
+.twoWord{
+  width:686rpx;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.express{
+  color: rgb(51,51,51);
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+.copys{
+  color: rgb(230,75,18);
+  font-size: 28rpx;
+}
+.content{
+  width:750rpx;
+  background: white;
+}
+.kuaidi_follow{
+  width: 100%;
+  background: #fff;
+  padding: 0 50rpx;
+  box-sizing: border-box;
+}
+.follow_satus{
+  border-left: 1rpx solid #d5d5d5;   
+}
+.follow_satus .follow_address{
+  margin: 0 20rpx;
+  padding-bottom: 25rpx;
+  position: relative;
+}
+.follow_satus .follow_address .address{
+  line-height: 40rpx;
+  font-size: 34rpx;
+}
+.follow_satus .follow_address .date{
+  font-size: 32rpx;
+}
+.follow_satus .follow_address .label{
+  width: 25rpx;
+  height: 25rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: -32.5rpx;
+  top: -5rpx;
+  background: rgb(179,179,179);
+}
+.follow_satus .follow_address .label.default{
+  background: rgb(179,179,179);
+}
+.follow_satus .follow_address .default{
+  color: rgb(179,179,179);
+ }
+ .logis{
+  font-size: 35rpx;
+  text-align: left;
+  padding:15rpx 0;
+  color: rgb(51, 51, 51);
+ }
+ .desc{
+  font-size: 35rpx;
+  padding:15rpx 0 15rpx 32rpx;
+  color: rgb(51, 51, 51);
+ }

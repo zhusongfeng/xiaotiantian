@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "读者卡",
+  "usingComponents": {
+    "input-item": "../../../node_modules/mini-antui/es/input-item/index"
+  }
+}

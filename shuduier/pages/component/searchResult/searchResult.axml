@@ -1,0 +1,37 @@
+<view class="container">
+  <view class='search_item'>
+    <view class="head">
+      <view>
+        <view class="search">          
+          <view class="searchcion">
+            <image src="../../../image/index_03.png" />
+          </view>
+          <input class="searchinput" name='input' type="text" placeholder="搜索" onInput ="searchInput"/>
+        </view>
+      </view>
+      <view class="lists">
+        <view class='sousuo' onTap='searchBook'>搜索</view>  
+      </view>
+      <view style='clear:both'></view>
+    </view>
+  </view>
+  <view class="searchList">
+    <view class="search_title">
+      <view class='hot_search'>你可以试试搜索</view>
+      <view class="hot_text" onTap="searchAnther">换一批</view>
+    </view>
+    <view class='search_list'>
+      <view class='search_word' a:for="{{hotkey.hotkey}}" a:key="" data-key='{{item}}' onTap='searchItem'>{{item}}</view>
+    </view>
+  </view>
+  <view class="searchList1">  
+    <view class="search_title">
+      <view class='hot_search'>搜索历史</view>
+      <view class="hot_text1" onTap="clearHistory"><image src="../../../image/search_03.png" /></view>
+    </view>     
+    <view class='search_list'>
+      <view class='search_word' a:for="{{searchWordArray}}" a:key="" data-key='{{item}}' onTap='searchItem'>{{item}}</view>      
+      <view class="noHistoryItem" a:if="{{sercherStorage.length==0}}">你还没有搜索记录</view>
+    </view>
+  </view>
+</view>

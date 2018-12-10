@@ -1,0 +1,67 @@
+<view class="container">
+  <view class="cardList">
+    <view class="cardTop">
+      <view class="cardLeft">
+        <view class="imgs">
+          <image src="../../../image/card_07.png" />
+        </view>
+      </view>
+      <view class="cardRight">
+        <view class="cardTitle">西安图书馆</view>
+        <view class="cardName">持卡人：青果果</view>
+        <view class="cardName">读者卡号：1234567890987456</view>
+      </view>
+    </view>
+  </view>
+  <view class="lists">   
+    <view class='sdr-tableviewcell cardNum'>
+      <view class="sdr-tableviewcell_label"><text decode="{{true}}">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</text></view>
+      <view class="mobile-box-flex-1">
+        <view class='sdr-tableviewcell_input'>青果果</view>
+      </view>
+    </view>
+    <view class='sdr-tableviewcell cardNum'>
+      <view class="sdr-tableviewcell_label">身份证号</view>
+      <view class="mobile-box-flex-1">
+        <view class='sdr-tableviewcell_input'>123456789012345678</view>
+      </view>
+    </view>
+    <view class='sdr-tableviewcell cardNum'>
+      <view class="sdr-tableviewcell_label"><text decode="{{true}}">职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业</text></view>
+      <view class="mobile-box-flex-1">
+        <view class='sdr-tableviewcell_input'>设计师</view>
+      </view>
+    </view>
+    <view class='sdr-tableviewcell cardNum'>
+      <view class="sdr-tableviewcell_label"><text decode="{{true}}">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历</text></view>
+      <view class="mobile-box-flex-1">
+        <view class='sdr-tableviewcell_input'>本科</view>
+      </view>
+    </view>
+    <view class='sdr-tableviewcell cardNum'>
+      <view class="sdr-tableviewcell_label">电话号码</view>
+      <view class="mobile-box-flex-1">
+        <view class='sdr-tableviewcell_input'>12345678900</view>
+      </view>
+    </view>
+    <view class='sdr-tableviewcell cardNum' style="border-bottom:none;">
+      <view class="sdr-tableviewcell_label">联系地址</view>
+      <view class="mobile-box-flex-1">
+        <view class='sdr-tableviewcell_input'>陕西省西安市灞桥区陆港大厦</view>
+      </view>
+    </view>
+  </view>
+  <view class="intro">
+    <view class='sdr-tableviewcell cardNum1' style="border-bottom:none;">
+      <view class="sdr-tableviewcell_label">读者须知</view>
+      <view class="mobile-box-flex-1">
+        <view class='sdr-tableviewcell_input1'><text>1.借阅期限：通用借书证的借期为30天，图书借期不超过30天。
+2.借阅数量：每位读者在一个借阅周期内（通用借书证的借期内）最大借书量不超过3册。
+3.“通用借阅证”必须在原办证馆还回。
+4.如遇特殊情况，外借图书不论到期与否，各图书馆有权随时索回。
+5.其他未尽事宜参照《陕西省高校图书馆馆际互借服务规则》执行。</text></view>
+      </view>
+    </view>
+  </view>
+  <button type="" onTap="unbind" class="btns">解除绑定</button>
+</view>

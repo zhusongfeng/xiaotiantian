@@ -1,0 +1,7 @@
+<view class="container">
+  <view a:for="{{article}}">
+    <view class="title">{{article.title}}</view>
+    <view class="gmt_publish">{{article.gmt_publish}}</view>
+    <view class="content">{{content}}</view>
+  </view>
+</view>

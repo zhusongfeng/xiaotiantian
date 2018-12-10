@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="addList" onTap="back" a:for="{{addressList}}" data-mobile='{{item.mobile}}' data-name='{{item.name}}' data-addressstr='{{item.addressStr}}' data-address_id='{{item.id}}'>
+    <view class="leftAdd" >
+      <view class="namePho">
+        <view class="name">{{item.name}}</view>
+        <view class="phone"> <text decode="{{true}}"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.mobile}}</text></view>
+      </view>
+      <view class="address">{{item.addressStr}}</view>
+    </view>
+    <view class="rightAdd">
+      <navigator  class="edit" a:if="{{!isback}}" url='../deitAddress/deitAddress?address_id={{item.id}}'>编辑</navigator>  
+    </view>
+  </view>
+  <button type="" onTap="receivedAddress" class="receivedAddress">+ 新建收货地址</button>
+</view>

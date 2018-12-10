@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="head">
+    <view class="headPic">
+      <image a:if="{{headpic!=null}}" src='{{headpic}}'></image>
+      <image a:else src='../../../image/mine_03.png'></image>
+    </view>
+    <view class='loginhead' onTap='isLogin'>{{user}}</view>
+    <view class='bookNum'>{{userNumber}}</view>
+  </view>
+  <navigator class="lists" url="../addressList/addressList">
+    <view class='cardNum'>
+      <view class="helps">地址管理</view>
+    </view>
+    <view class="cardPic">
+      <image src="../../../image/back.png" />
+    </view>
+  </navigator>
+  <navigator class="lists" style="margin-top:32rpx;" url="../changePhone/changePhone">
+    <view class='cardNum'>
+      <view class="helps">修改手机号码</view>
+    </view>
+    <view class="cardPic">
+      <image src="../../../image/back.png" />
+    </view>
+  </navigator>
+  <navigator class="lists lines" style="margin-top:32rpx;" url="../suggestion/suggestion">
+    <view class='cardNum'>
+      <view class="helps">意见反馈</view>
+    </view>
+    <view class="section">让我们做的更好</view>
+    <view class="cardPic">
+      <image src="../../../image/back.png" />
+    </view>
+  </navigator>
+  <navigator class="lists" url="../about/about">
+    <view class='cardNum'>
+      <view class="helps">关于我们</view>
+    </view>
+    <view class="cardPic">
+      <image src="../../../image/back.png" />
+    </view>
+  </navigator>
+  <button type="" onTap="exitLogin" class="exitLogin" a:if="{{user!='登录'}}">退出登录</button>
+</view>

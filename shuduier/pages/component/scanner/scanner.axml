@@ -1,0 +1,5 @@
+<view class="page-body">    
+<view class="section">
+  <button type="warn" onTap="scan">扫一扫</button>
+</view>
+</view>

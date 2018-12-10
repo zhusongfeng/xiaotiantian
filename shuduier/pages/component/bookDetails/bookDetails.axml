@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="head">
+    <view class="picsLeft"><image src='{{coverimg}}' onError="errorCoverimg" /></view>
+    <view class="textRight">
+      <view class="title">{{title}}</view>
+      <view class="author">价格：{{price}}</view>
+      <view class=" author1" a:if="{{author != null}}">作者：{{author}}</view>
+      <view class=" author1" a:if="{{author == null}}">作者：暂无数据</view>
+      <view class="author">ISBN码：{{isbn}}</view>
+      <view class="author">出版社：{{publisher}}</view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="swiper-tab">
+      <view class="bre swiper-tab-list {{tab==0 ? 'on' : ''}}" data-current="0" onTap="tab_click">简介</view>
+      <view class="swiper-tab-list {{tab==1 ? 'on' : ''}}" data-current="1" onTap="tab_click">目录</view>
+    </view>
+    <swiper current="{{tab}}" class="swiper-box" duration="300" onChange="tab_slide">
+      <swiper-item class="items">
+        <view class="info" a:if="{{content!=null}}">{{content}}</view>
+        <view class="info" a:if="{{content==null}}">暂无简介</view>
+      </swiper-item>
+       <swiper-item class="items">
+        <!-- <view class="info" a:if="{{content!=null}}">{{content}}</view> -->
+        <view class="info">暂无目录</view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="btn">
+    <view onTap="bookShare" data-id='{{id}}' class="bookShare">{{btnText}}</view>
+    <view onTap='borrowDetail' class="borrowing">立即借阅</view>
+  </view>
+</view>

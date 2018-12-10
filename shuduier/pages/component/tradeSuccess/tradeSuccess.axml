@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="head">
+    <view class="descript">
+      <image src="../../../image/pic3.png" />
+      <text decode="{{true}}">&nbsp;&nbsp;完成借阅</text>
+    </view>
+    <view class="descript1">您已完成本次借阅，快去首页继续阅读吧！</view>
+  </view>
+  <view class="content">
+    <view class='booklist'>
+      <view class="section">
+        <view class="flex-wrp">
+          <navigator class="book-item" style='float:left' a:for="{{bookList}}" a:key="id" url="../bookDetails/bookDetails?book_id={{item.id}}">
+            <image class="book_image"  src="{{item.coverimg}}" onError="errorCoverimg" data-errorimg="{{index}}"></image>
+            <view class='book_name'>{{item.title}}</view>
+            <view class='book_author' a:if="{{item.author == null}}">作者：暂无数据{{item.author}}</view>
+            <view class='book_author' a:if="{{item.author != null}}">作者：{{item.author}}</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

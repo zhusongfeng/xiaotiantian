@@ -1,0 +1,33 @@
+<view class="container">   
+ <view class="lack" a:if="{{checkinList==null||checkinList==''}}">暂无缺书登记记录</view>
+  <view a:else>
+    <view class="allOrder" a:for="{{checkinList}}" a:key="id">
+      <view class="orderDetail">
+        <view class="titles">
+          <view class="libraryName">登记时间：{{item.gmt_create}}</view>
+          <view class="statusName">{{item.statusStr}}</view>
+        </view>
+        <view class="bookItems">
+          <view class="book_images">
+            <image a:if="{{item.status==0 ||item.status==2}} " src="../../../image/lackBook.png"></image>
+            <image a:else src="{{item.coverimg}}" onError="errorCoverimg" data-errorimg="{{index}}"></image>
+          </view>
+          <view class="orderList">
+            <view class='book_names1' a:if="{{item.book_title!=null}}">{{item.book_title}}</view>
+            <view class='book_authors1' a:if="{{item.book_title==null}}">暂无数据</view>
+            <view class='book_authors1' a:if="{{item.author!=null}}">作者：{{item.author}}</view>
+            <view class='book_authors1' a:if="{{item.author==null}}">作者：暂无数据</view>
+            <view class='book_presss1' a:if="{{item.book_isbn!=null}}">国际标准书号ISBN：{{item.book_isbn}}</view>
+            <view class='book_presss1' a:if="{{item.book_isbn==null}}">国际标准书号ISBN：暂无数据</view>
+          </view>
+        </view>
+        <view class="notices" a:if="{{item.status==0}}">通知：图书正在审核，请稍后查看。</view>
+        <view class="notices" a:if="{{item.status==1}}">通知：审核已通过，点击查看图书详情。</view>
+        <view class="notices" a:if="{{item.status==2}}">通知：{{item.adminmsg}}</view>
+        <view class="btns" a:if="{{item.status==1}}">
+          <navigator class="btn" url="../bookDetails/bookDetails?book_id={{checkinList[index].book_id}}" data-id='{{item.id}}' onTap="cancels">查看图书</navigator>
+        </view>
+      </view>
+    </view> 
+  </view>
+</view>

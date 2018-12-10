@@ -1,0 +1,35 @@
+<view class='container'>
+  <view class='tableList' style="margin-top:32rpx;">
+    <view class="person">收货姓名</view>
+    <view class="tableRight">
+      <input class='tableInput' type='text' placeholder="请输入联系人" onInput ="nameInput" value='{{name}}'></input>
+    </view>
+  </view>
+  <view class='tableList' >
+    <view class="person">电话号码</view>
+    <view class="tableRight" onTap="chosePhone">
+      <input class='tableInput' type='number' placeholder="请输入电话号码" onInput ="mobileInput" value='{{mobile}}'></input>
+    </view>
+  </view>
+  <view class='tableList'>
+    <view class="person">所在地区</view>
+    <view class="tableRight1" onTap="click">{{province_name}} {{city_name}} {{area_name}}</view>
+    <view class="pic"><image src="../../../image/back.png" /></view>
+  </view>
+  <view class='tableList'>
+    <view  class="person">详细地址</view>
+     <view class="tableRight">
+      <input class='tableInput' type='text' placeholder="请输入详细地址" onInput ="addressStrInput" value='{{address}}'></input>
+    </view>
+  </view>
+  <view class='tableList1'>
+    <view class="person1">设置默认地址</view>
+    <view class="tableRight2">
+      <switch onChange="switchChange" color="green" checked="{{is_default}}">
+    </view>
+  </view>
+  <view class="tableList1" onTap="delete">
+    <view class="person1" style="color: rgb(213,86,43);">删除此条地址</view>
+  </view>
+  <button type="" onTap="addAddress" class="addAddress">保存</button>
+</view>

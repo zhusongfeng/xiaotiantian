@@ -1,0 +1,7 @@
+<view class="container1">
+  <view class='title'>解锁读者卡</view>
+  <view class='contentList' a:for="{{unlockDocList}}">
+    <view class='content'>{{index+1}}、{{item}}</view>
+  </view>
+  <view class='big_bt' onTap='confirmUnlock'>确认解锁</view>
+</view>

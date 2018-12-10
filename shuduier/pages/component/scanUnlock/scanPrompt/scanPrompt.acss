@@ -1,0 +1,30 @@
+.container1 {
+  width: 100%;
+  box-sizing: border-box;  
+}
+page{
+  height: 100%;
+  background: white;
+}
+.title{
+  font-size: 34rpx;
+  text-align: center;
+  padding-top:50rpx;
+  padding-bottom: 10rpx;
+}
+.content{
+  font-size: 30rpx;
+  line-height: 45rpx;
+}
+.contentList{
+  margin-top: 20rpx;
+}
+.big_bt{
+  width: 540rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  background: rgb(213,86,43);
+  text-align: center;
+  margin: 50rpx auto;
+}

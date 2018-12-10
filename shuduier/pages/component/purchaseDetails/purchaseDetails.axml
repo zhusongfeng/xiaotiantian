@@ -1,0 +1,69 @@
+<view class="container">
+  <view class="topPic">
+    <view class="topInfo">
+      <view class="img">
+        <image a:if="{{status==1}}" src="../../../image/chenggong.png">
+        <image a:if="{{status!=1}}" src="../../../image/zhifu.png">
+      </view> 
+      <text class="topText">{{statusStr}}</text>
+    </view>
+  </view>
+  <view class="purchase">
+    <view class="purchaseOrg">{{device_name}}-{{doorno}}号柜</view>
+    <view class="purchaseCon" a:for="{{bookList}}">
+      <view class="purchaseInfo" >
+        <view class="purchaseLeft">
+          <image src="../../../image/lackBook.png">
+        </view>
+        <view class="purchaseMiddle">
+          <view class="bookTitle">{{item.title}}</view>
+          <view class="bookAuthor" a:if="{{item.author==null||item.author==''}}">作者：暂无数据</view>
+          <view class="bookAuthor" a:else>作者：{{item.author}}</view>
+          <view class="bookIsbn" a:if="{{item.isbn==null||item.isbn==''}}">ISBN：暂无数据</view>
+          <view class="bookIsbn" a:else>ISBN：{{item.isbn}}</view>
+        </view>
+      </view>
+      <view class="purchaseRight">
+        <view class="bookPrice">¥{{item.sell_price}}</view>
+        <view class="bookNum">x{{item.book_count}}1</view>
+      </view>
+    </view>
+    <view class="bottoms">
+      <!-- <view class="discon">
+        <view class="discount">
+          <text decode = "{{true}}">折扣&nbsp;&nbsp;0.5折</text>
+          <text decode = "{{true}}">-¥&nbsp;&nbsp;20</text>
+        </view>     
+        <view class="discount">
+          <text decode = "{{true}}">折扣&nbsp;&nbsp;0.5折</text>
+          <text decode = "{{true}}">-¥&nbsp;&nbsp;20</text>
+        </view>
+      </view> -->
+      <view class="pay">
+        <text>共{{book_count}}件  实付款：</text>
+        <text>¥{{money}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="details">
+    <view class="orderTitle">
+      <view>订单信息</view>
+    </view>
+    <view class="orderNum">
+      <text>订单号：{{sellno}}</text>
+      <text onTap="copy">复制</text>
+    </view>
+    <view class="orderTime">下单时间：{{gmt_create}}</view>
+    <view class="orderpPay">支付时间：{{gmt_update}}</view>
+    <view class="orderBank">付款方式：支付宝</view>
+  </view> 
+  <view class="btn">
+    <view class="delete">
+      <view class="deleteImg" onTap="delete">
+        <image a:if="{{status==1}}" src="../../../image/shanchu.png" />
+        <image a:if="{{status!=1}}" src="../../../image/zixun.png" />
+      </view>
+    </view>
+    <view class="service" onTap="service">联系客服</view>
+  </view>
+</view>

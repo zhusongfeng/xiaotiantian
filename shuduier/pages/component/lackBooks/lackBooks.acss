@@ -1,0 +1,126 @@
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.tops{
+  margin-top:32rpx;
+}
+.sdr-tableviewcell{
+  display: flex;
+  -webkit-align-items:center;
+}
+.organization{
+  width:750rpx;
+  height:100rpx;
+  background: white;
+  margin:32rpx 0;
+}
+.symbol{
+  color:rgb(213,86,43);
+}
+.sdr-tableviewcell_label1{
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+  line-height: 100rpx;
+  padding-left:34rpx;
+  display: flex;
+}
+.cardNum{
+  width:750rpx;
+  height:100rpx;
+  background: white;
+}
+.cardNum .sdr-tableviewcell_label{
+  font-size: 28rpx;
+  color: rgb(153,153,153);
+  line-height: 100rpx;
+  padding-left:34rpx;
+  display: flex;
+}
+.organization1{
+  width:750rpx;
+  height:100rpx;
+  background: white;
+}
+.sdr-tableviewcell_input{
+  width:550rpx;
+  padding-left:30rpx;
+}
+.sdr-tableviewcell_label2{
+  font-size: 28rpx;
+  color: rgb(153,153,153);
+  line-height: 100rpx;
+  padding-left:34rpx;
+  display: flex;
+}
+.names{
+  padding-left:20rpx;
+}
+.pics{
+  width:21rpx;
+  height:11rpx;
+  border:1px solid red;
+}
+.weui-cell__bd{
+  width:450rpx;
+}
+.itemList{
+  width:750rpx;
+}
+.others{
+  width:750rpx;
+  height:100rpx;
+  border-bottom: 1px solid #dddddd;
+}
+.others{
+  display: block;
+  content: '';
+  clear: both;
+}
+.otherText{
+  color: rgb(153,153,153);
+  font-size: 26rpx;
+  padding-left:34rpx;
+  line-height: 100rpx;
+  float: left;
+}
+.otherPic{
+  width:32rpx;
+  height:32rpx;
+  margin-right:28rpx;
+  margin-top:34rpx;
+  float: right;
+}
+.otherPic image{
+  width:100%;
+  height:100%;
+}
+.btns{
+  width:540rpx;
+  height:100rpx;
+  background: rgb(213,86,43);
+  color: white;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin:50rpx auto 0;
+  border-radius: 4rpx;
+}
+.text{
+  text-align: center;
+  font-size: 26rpx;
+  padding-top:25rpx;
+  color: rgb(213,86,43);
+}
+.footers{
+  font-size: 28rpx;
+  color: skyblue;
+  position: absolute;
+  bottom:20rpx;
+  left:300rpx;
+}

@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;  
+}
+.cardPic{
+  width: 750rpx;
+  height:400rpx;
+  background: white;
+  margin:32rpx 0;
+  box-sizing: border-box;
+}
+.title{
+  font-size: 36rpx;
+  color: black;
+  text-align: center;
+  padding-top: 48rpx;
+  padding-bottom: 20rpx;
+}
+.info{
+  font-size: 28rpx;
+  color: rgb(51, 51, 51);
+  padding:0 34rpx;
+  text-align: left;
+  line-height: 40rpx;
+}
+.btn{
+  width: 540rpx;
+  height:100rpx;
+  background: rgb(213,86,43);
+  color: white;
+  font-size: 28rpx;
+  border-radius: 6rpx;
+  text-align: center;
+  line-height: 100rpx;
+  margin:20rpx auto;
+}

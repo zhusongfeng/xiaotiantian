@@ -1,0 +1,67 @@
+<view class="container">
+  <view class="head">
+    <view class="headPic">
+      <image a:if="{{headpic!=null}}" src='{{headpic}}'></image>
+      <image a:else src='../../../image/mine_03.png'></image>
+    </view>
+    <view class='loginhead' onTap='isLogin'>{{user}}</view>
+    <view class='bookNum'>{{userNumber}}</view>
+  </view>
+  <view class="lists">
+    <navigator class="listsOne" redirect url="../cardList/cardList">
+      <view class="imgs"><image src="../../../image/mine_07.png" /></view>
+      <view class="text">读者卡</view>
+    </navigator>
+    <navigator class="listsOne" redirect url="../lackBooks/lackBooks">
+      <view class="imgs"><image src="../../../image/mine_09.png" /></view>
+      <view class="text">缺书登记</view>
+    </navigator>
+    <navigator class="listsOne" redirect url="../readerHelp/readerHelp">
+      <view class="imgs"><image src="../../../image/mine_11.png" /></view>
+      <view class="text">读者帮助</view>
+    </navigator>
+    <navigator url="../setting/setting" redirect class="listsOne"> 
+      <view class="imgs"><image src="../../../image/mine_13.png" /></view>
+      <view class="text">设置</view>
+    </view>
+  </navigator>
+  <view class="notices"> 
+    <view class="swiper-tab">
+      <view class="bre swiper-tab-list {{tab==0 ? 'on' : ''}}" data-current="0" onTap="tab_click">动态</view>
+      <view class="swiper-tab-list {{tab==1 ? 'on' : ''}}" data-current="1" onTap="tab_click">书架</view>
+    </view>
+    <swiper current="{{tab}}" class="swiper-box" duration="300" onChange="tab_slide">
+      <swiper-item class="items">
+        <view class="desc" a:if="{{messageList==null || messageList=='' || !isLogin}}">暂无动态消息</view>
+          <scroll-view class="scroll-view_H" a:else scroll-y="{{true}}" style="height: 100%">
+            <view class="one">
+              <view class="yindao">下拉可刷新</view>
+              <view class="kuaidi_follow">
+                <view class="follow_satus" a:for="{{messageList}}" a:key="{{id}}">
+                  <view class="follow_address">
+                    <view class="label default"></view>
+                    <view class="date">{{item.gmt_create}}</view>
+                    <view class="address default">{{item.title}}</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </scroll-view>
+      </swiper-item>
+      <swiper-item class="items">
+        <view class="desc" a:if="{{bookList==null || !isLogin}}">书架暂无图书</view>
+          <scroll-view class="scroll-view_H" a:else scroll-y="{{true}}" style="height: 100%"> 
+          <view class="one">
+            <view class="yindao">长按图书封面可进行编辑</view>
+            <view class="info">
+              <navigator a:for="{{bookList}}" a:key="id" class="bookPic" onLongTap="longTaps" data-id='{{item.bs_id}}' url='../bookDetails/bookDetails?book_id={{item.id}}'>
+                <view class="picImg"><image src="{{item.coverimg}}" onError="errorCoverimg" data-errorimg="{{index}}" /></view>
+                <view class="bookTitle">{{item.title}}</view>
+              </navigator>
+            </view>
+          </view>
+        </scroll-view>
+      </swiper-item>   
+    </swiper>
+  </view>
+</view>

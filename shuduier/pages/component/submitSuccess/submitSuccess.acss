@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box; 
+}
+.head{
+  width:750rpx;
+   box-sizing: border-box; 
+  height: 300rpx;
+  background: url(../../../image/head_02.jpg);
+}
+.descript{
+  color:rgb(245,245,245);
+  font-size:33rpx;
+  text-align: center;
+  padding: 50rpx 0rpx 15rpx;
+}
+.descript image{
+  width:30rpx;
+  height:30rpx;
+}
+.descript1{
+  color:rgba(245,245,245,0.9);
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+.content{
+  margin-top: 75rpx;
+  margin-bottom: 32rpx;
+}
+.list{
+  width:750rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  line-height: 100rpx;
+  border-bottom: 1px solid #ededed;
+}
+.leftList{
+  width:150rpx;
+  height: 100%;
+  color: rgb(51, 51, 51);
+  font-size: 30rpx;
+  text-align: right;
+}
+.rightList{
+  width:550rpx;
+  height: 100%;
+  color: rgb(153, 153, 153);
+  font-size: 30rpx;
+}
+.info{
+  width:750rpx;
+  height: 434rpx;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+.leftList1{
+  width:150rpx;
+  height: 100%;
+  color: rgb(51, 51, 51);
+  font-size: 30rpx;
+  text-align: right;
+  padding-top: 20rpx;
+}
+.rightList1{
+  width:550rpx;
+  height: 100%;
+  line-height: 40rpx;
+}
+.rightList1 text{
+  color: rgb(153, 153, 153);
+  font-size: 30rpx;
+}
+.insurt{
+  width: 750rpx;
+  height: 100rpx;
+  background: rgb(213,86,43);
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: white;
+}
+.remind{
+  width:702rpx;
+  height:100rpx;
+  box-shadow: 0 0 8rpx #ededed;
+  background: white;
+  position: absolute;
+  top:250rpx;
+  left:24rpx;
+  z-index: 50;
+}
+.remindText{
+  padding:18rpx 48rpx;
+}
+.remindText text:nth-child(1){
+  color:rgb(230,75,18);
+  font-size: 26rpx;
+}
+.remindText text:nth-child(2){
+  color:rgb(51,51,51);
+  font-size: 26rpx;
+}
+.btns{
+  width: 750rpx;
+  height: 100rpx;
+  background: rgb(230,75,18);
+  color:white;
+  font-size:30rpx;
+  text-align:center;
+  line-height:100rpx;
+}

@@ -1,0 +1,51 @@
+<view class="ontainer">
+  <view class="tops">
+    <view class='sdr-tableviewcell cardNum' style="border-bottom:1px solid #dddddd;">
+      <view class="sdr-tableviewcell_label">
+        <view class="symbol">*</view>书名    
+      </view>
+      <view class="mobile-box-flex-1">
+        <input class='sdr-tableviewcell_input' name="accout" type='text' onInput ="bookInput" value='{{bookName}}'></input>
+      </view>
+    </view>
+    <view class='sdr-tableviewcell cardNum' style="border-bottom:1px solid #dddddd;">
+      <view class="sdr-tableviewcell_label">
+        <view class="symbol">*</view>ISBN    
+      </view>
+      <view class="mobile-box-flex-1">
+        <input class='sdr-tableviewcell_input' type='number' onInput ="cardnoInput" value='{{cardIsbn}}' onBlur="account_val"></input>
+      </view>
+    </view>
+  </view>
+  <view class="itemList" a:for="{{itemList}}" a:key="{{index}}">
+    <view class="others" onTap="click" data-index="{{index}}">
+      <view class="otherText">其他信息</view>
+      <view class="otherPic">
+        <image src="../../../image/pic1_22.png" />
+      </view>
+    </view>
+    <view hidden="{{item.hidden}}">
+      <view class='sdr-tableviewcell cardNum' style="border-bottom:1px solid #dddddd;">
+        <view class="sdr-tableviewcell_label">作者</view>
+        <view class="mobile-box-flex-1">
+          <input class='sdr-tableviewcell_input' type='text' onInput ="authoroInput" value='{{author}}'></input>
+        </view>
+      </view>
+      <view class='sdr-tableviewcell cardNum' style="border-bottom:1px solid #dddddd;">
+        <view class="sdr-tableviewcell_label">出版社</view>
+        <view class="mobile-box-flex-1">
+          <input class='sdr-tableviewcell_input' type='text' onInput ="publishInput" value='{{publish}}'></input>
+        </view>
+      </view>
+      <view class='sdr-tableviewcell cardNum' style="border-bottom:1px solid #dddddd;">
+        <view class="sdr-tableviewcell_label">其他信息</view>
+        <view class="mobile-box-flex-1">
+          <input class='sdr-tableviewcell_input' type='text' value='{{otherMsg}}' placeholder="例如京东，当当购买链接" onInput ="otherInput"></input>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="text">*请务必填写正确的书名或ISBN号</view>
+  <button type="" onTap="lackBook" class="btns">立即登记</button>
+  <navigator class="footers" redirect url="../lackBookList/lackBookList">查看历史记录</navigator>
+</view>

@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section" style="margin-top:32rpx;">
+      <view class="names">原手机号码</view>
+      <view class="inps">
+        <view class="nums">{{phone}}</view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="names">新手机号码</view>
+      <view>
+        <view class="inps">
+          <input class="weui-input" maxlength="11" name="account" data-name='account' value='{{account}}' placeholder="请输入新手机号码" onInput ="phoneInput" onBlur='account_val'/>
+        </view>
+      </view>
+      <view class="code" disabled='{{disabled}}' onTap="getVerificationCode">{{time}}</view>
+    </view>
+    <view class="page-section">
+      <view class="names">验证码</view>
+      <view class="inps">
+        <input class="weui-input" password type="text" placeholder="请输入验证码" onInput ="codeInput"/>
+      </view>
+    </view>
+    <view class='btn' onTap='changePhone'>确认修改</view>
+  </view>
+</view>

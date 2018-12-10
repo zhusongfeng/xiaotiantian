@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+page{
+  height: 100%;
+  background: white;
+}
+.content{
+  width:100%;
+}
+.title{
+  text-align: center;
+  font-size: 36rpx;
+  padding:15rpx 0;
+  color: black;
+  font-weight: 400;
+}
+.desc{
+  font-size: 28rpx;
+  line-height: 45rpx;
+  color: rgb(51, 51, 51);
+  padding:5rpx 0;
+}

@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="bookList" a:for="{{list}}"> 
+    <navigator url="../purchaseDetails/purchaseDetails?sell_id={{item.id}}" >
+      <view class="bookcaseTitle">
+        <text class="bookcaseName">{{item.device_name}}-{{item.doorno}}号柜</text>
+        <text class="bookStatus">{{item.statusStr}}</text>
+      </view>
+      <view class="bookContent" a:for="{{item.bookList}}">
+        <view class="borrowList">
+          <view class="bookImage">
+            <image src="../../../image/lackBook.png">
+            </view>
+            <view class="bookInfo">
+              <view class="bookTitle">{{item.title}}</view>
+              <view class="bookAuthor" a:if="{{item.author==null||item.author==''}}">作者：暂无数据</view>
+              <view class="bookAuthor" a:else>作者：{{item.author}}</view>
+              <view class="bookIsbn" a:if="{{item.isbn!=null||item.isbn!=''}}">ISBN：{{item.isbn}}</view>
+              <view class="bookIsbn" a:else>ISBN：暂无数据</view>
+            </view>
+            <view class="bookPrice">
+              <view class="bookPr">￥{{item.sell_price}}</view>
+              <view class="bookNum">x{{item.book_count}}1</view>
+            </view>
+          </view>
+        </view>
+    </navigator>
+    <view class="bookBottomm">
+      <view class="bookLeft">
+        <text>共{{item.book_count}}件  实付款：</text>
+        <text>¥{{item.money}}</text>
+      </view>
+      <view class="bookRight" a:if="{{item.status==1}}">删除订单</view>
+      <view class="bookRight" a:if="{{item.status!=1}}">立即支付</view>
+    </view>
+  </view>
+  <view class="bookLists test" a:if="{{list==null||list==''}}">暂无购买记录</view>  
+  <view class="foot"></view>
+</view>

@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/component/borrow/borrow",
+    "pages/component/mine/mine",
+    "pages/component/allOrder/examine/examine",
+    "pages/component/allOrder/return/return",
+    "pages/component/tradeSuccess/tradeSuccess",
+    "pages/component/searchResult/searchResult",
+    "pages/component/scanner/scanner",
+    "pages/component/logistics/logistics",
+    "pages/component/tieCard/tieCard",
+    "pages/component/cardList/cardList",
+    "pages/component/lackBooks/lackBooks",
+    "pages/component/lackBookList/lackBookList",
+    "pages/component/unbindCard/unbindCard",
+    "pages/component/readerHelp/readerHelp",
+    "pages/component/setting/setting",
+    "pages/component/addressList/addressList",
+    "pages/component/deitAddress/deitAddress",
+    "pages/component/suggestion/suggestion",
+    "pages/component/changePhone/changePhone",
+    "pages/component/borrowSuccess/borrowSuccess",
+    "pages/component/about/about",
+    "pages/component/listOfBook/listOfBook",
+    "pages/component/books/books",
+    "pages/component/confirmation/confirmation",
+    "pages/component/login/passwordLogin/passwordLogin",
+    "pages/component/bookDetails/bookDetails",
+    "pages/component/onlineCertificate/certificateSecond/certificateSecond",
+    "pages/component/privacy/privacy",
+    "pages/component/disclaimer/disclaimer",
+    "pages/component/help/help",
+    "pages/component/searchWin/searchWin",
+    "pages/component/scanUnlock/scanPrompt/scanPrompt",
+    "pages/component/scanUnlock/unlockVertificate/unlockVertificate",
+    "pages/component/submitSuccess/submitSuccess",
+    "pages/component/sellBook/sellBook",
+    "pages/component/purchaseDetails/purchaseDetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "书堆儿",
+    "navigationBarTextStyle": "black",
+    "pullRefresh": true
+  },
+  "tabBar": {
+    "textColor": "#333",
+    "selectedColor": "#d0501f",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "#d5d5d5",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "icon": "image/tab.png",
+        "activeIcon": "image/index.png",
+        "name": "首页"
+      },
+      {
+        "pagePath": "pages/component/borrow/borrow",
+        "icon": "image/tabs.png",
+        "activeIcon": "image/indexs.png",
+        "name": "我的借阅"
+      },
+      {
+        "pagePath": "pages/component/mine/mine",
+        "icon": "image/tabss.png",
+        "activeIcon": "image/indexss.png",
+        "name": "个人中心"
+      }
+    ]
+  }
+}

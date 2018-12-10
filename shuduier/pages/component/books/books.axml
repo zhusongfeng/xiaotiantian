@@ -1,0 +1,13 @@
+<view class="container" >
+  <view class="section page-section">
+    <view class="flex-wrp">
+      <navigator class="book-item" style='float:left' a:for="{{newbooks.bookList}}" a:key="id" url="../bookDetails/bookDetails?book_id={{item.id}}">
+        <image class="book_image scroll-view-item_H" src="{{item.coverimg}}" onError="errorCoverimg" data-errorimg="{{index}}"></image>
+        <view class='book_name scroll-view-item_H'>{{item.title}}</view>
+        <view class='book_author scroll-view-item_H' a:if="{{item.author == null}}">作者：暂无数据{{item.author}}</view>
+        <view class='book_author scroll-view-item_H' a:if="{{item.author != null}}">作者：{{item.author}}</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="root">----我们是有底线的人----</view>
+</view>

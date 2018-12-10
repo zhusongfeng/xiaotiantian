@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="title">解锁认证</view>
+  <view class="tab">
+    <view class="leftTab">
+      <text>*</text><text decode="{{true}}">&nbsp;姓名</text>
+    </view>
+    <view class="rightTab">
+      <input class="inps" type='text' placeholder="请输入您的姓名" onInput ="nameInput"/>
+    </view>
+  </view>
+  <view class="tab">
+    <view class="leftTab">
+      <text>*</text>
+      <text decode="{{true}}">&nbsp;身份证</text>
+    </view>
+    <view class="rightTab">
+      <input class="inps" type='text' placeholder="请输入您的身份证号" onInput ="idcardInput"/>
+    </view>
+  </view><view class="tab tabs">
+    <view class="leftTab">
+      <text>*</text>
+      <text decode="{{true}}">&nbsp;读者卡</text>
+    </view>
+    <view class="rightTab">
+      <input class="inps" type='text' placeholder="请输入您的读者卡号" onInput ="cardInput"/>
+    </view>
+  </view>
+  <view class="info">*认证信息每人每天最多提交三次，请谨慎操作。认证失败请于次日重试。</view>
+  <view class='big_bt' onTap='submit'>确认解锁</view>
+</view>

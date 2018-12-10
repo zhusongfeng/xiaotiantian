@@ -1,0 +1,25 @@
+
+<view class="container">
+  <view class="content" a:if="{{data!=null||data!=''}}">
+    <view class="head">借阅详情</view>
+    <view class="allOrder" a:for="{{data}}">
+      <view class="library">
+        <view class="libraryName" style="padding:20rpx 0 20rpx 20rpx;">图书馆:{{item.name}}</view>
+        <view class="libraryName1" style="padding:20rpx 20rpx 20rpx 0;">卡号:{{item.readercard}}</view>
+      </view>
+      <view class="orderList" a:for="{{item.borrowList}}">
+        <view class='book_names1' a:if="{{item.title!=undefined||item.title!=null}}">书名：{{item.title}}</view>
+        <view class='book_names1' a:else>书名：暂无数据</view>
+        <view class='book_authors1' a:if="{{item.author==undefined}}">作者：暂无数据</view>
+        <view class='book_authors1' a:else>作者：{{item.author}}</view>
+        <view class='book_presss1' a:if="{{item.barcode!=undefined||item.title!=barcode}}">条码号：{{item.barcode}}</view>
+        <view class='book_presss1' a:else>条码号：暂无数据</view>        
+        <view class='book_presss1' a:if="{{item.borrowtime==undefined}}">借阅时间：作者：暂无数据</view>
+        <view class='book_presss1' a:else>借阅时间：{{item.borrowtime}}</view>
+        <view class='book_presss1' a:if="{{item.barcode!=undefined||item.title!=backtime}}">归还时间：{{item.backtime}}</view>
+        <view class='book_presss1' a:else>条码号：暂无数据</view>
+      </view>
+    </view>
+  </view>
+  <view class="message" a:if="{{data==null||data==''}}">{{message}}</view>
+</view>

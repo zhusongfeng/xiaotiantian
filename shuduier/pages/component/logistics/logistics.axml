@@ -1,0 +1,31 @@
+<view class="container">
+  <view>
+    <view class="head">
+      <view class="oneWord">书名：{{book_title}}</view>
+      <view class="twoWord">
+        <view class="express" a:if="{{express_name!=null}}">物流公司：{{express_name}}</view>
+        <view class="express" a:if="{{express_name==null}}">物流公司：暂无</view>
+      </view>
+      <view class="twoWord">
+        <view class="express" a:if="{{expressno!=null}}">运单编号：{{expressno}}</view>
+        <view class="express" a:if="{{expressno==null}}">运单编号：暂无</view>
+        <view class="copys" onTap="copy">复制</view>
+      </view>
+    </view>
+    <view class="content">
+      <view>
+        <view class="desc" a:if="{{expressorder==null||expressorder==''}}">暂无物流信息</view>                        
+          <view class="kuaidi_follow" a:if="{{expressorder!=null}}">
+            <view class="logis">物流信息</view>
+            <view class="follow_satus">
+              <view class="follow_address">
+                <view class="label default"></view>
+                <view class="date">{{gmt_create}}</view>
+                <view class="address default">{{address}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>

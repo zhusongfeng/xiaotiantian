@@ -1,0 +1,114 @@
+<view class="container">
+  <view class='search_item'>
+    <view class="head">
+      <navigator url='../component/searchResult/searchResult'>
+        <view class="search">
+          <view class="searchcion"><image src="../../image/index_03.png" /></view>
+          <input class="searchinput" placeholder="搜索" bindinput ="searchInput"/>
+        </view>
+      </navigator>
+      <view class='mine_list1' onTap="scan">
+        <view class="imgs"><image class="mine1" src="../../image/dingdan.png"></image></view>
+      </view>
+      <view style='clear:both'></view>
+    </view>
+  </view>
+  <view class="swipers">    
+    <swiper indicator-dots="{{indicatorDots}}" onChange="swiperChange" autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{isVertical}}" duration="{{duration}}" circular='false'>
+      <swiper-item a:for="{{slideItemList}}">
+        <image src="{{item.picurl}}" onTap="swipclick"/>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="booklist">
+    <view class='title'>
+      <view style='float:left'>猜你喜欢</view>
+      <view style='float:right'>
+        <view class="more" onTap="batch">换一批</view>
+      </view>
+      <view style='clear:both'></view>
+    </view>
+    <view class="section page-section">   
+      <scroll-view class="scroll-view_H" scroll-x="{{true}}" style="width: 100%;">
+        <view class="flex-wrap1">          
+          <navigator class="book-item1" style='float:left' a:for="{{bookList}}"  a:key="id" url="../component/bookDetails/bookDetails?book_id={{item.id}}">
+            <image class="book_image1" src="{{item.coverimg}}" onError="errorCoverimgRecommend" data-errorimg="{{index}}"></image>
+            <view class="rightContent">
+              <view class='book_name1 scroll-view-item_H'>{{item.title}}</view>
+              <view class='book_author1 scroll-view-item_H' a:if="{{item.author == null}}">作者：暂无数据{{item.author}}</view>
+              <view class='book_author1 scroll-view-item_H' a:if="{{item.author != null}}">作者：{{item.author}}</view>
+              <view class='book_press1 scroll-view-item_H' a:if="{{item.publisher == null}}">出版社：暂无数据{{item.publisher}}</view>
+              <view class='book_press1 scroll-view-item_H' a:if="{{item.publisher != null}}">出版社：{{item.publisher}}</view>              
+              <view class='book_content1 scroll-view-item_H' a:if="{{item.bookExt.contentintro == null}}">介绍：暂无数据{{item.bookExt.contentintro}}</view>
+              <view class='book_content1 scroll-view-item_H' a:if="{{item.bookExt.contentintro != null}}">介绍：{{item.bookExt.contentintro}}</view>
+            </view>
+          </navigator>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="booklist">
+    <view class='title'>
+      <view style='float:left'>{{newbooks.name}}</view>
+      <navigator style='float:right' url='../component/books/books?subject_id={{newbooks.id}}'>
+        <view class="more">查看全部</view>
+      </navigator>
+      <view style='clear:both'></view>
+    </view>
+    <view class="section page-section"> 
+      <scroll-view class="scroll-view_H" scroll-x="{{true}}" style="width: 100%;">
+        <view class="flex-wrp">
+          <navigator class="book-item" style='float:left' a:for="{{newbooks.bookList}}" a:key="id" url="../component/bookDetails/bookDetails?book_id={{item.id}}">
+            <view class="book_image scroll-view-item_H"><image  src="{{item.coverimg}}" onError="errorCoverimgNewbooks" data-errorimg="{{index}}"></image></view>
+            <view class='book_name scroll-view-item_H'>{{item.title}}</view>
+            <view class='book_author scroll-view-item_H' a:if="{{item.author == null}}">作者：暂无数据{{item.author}}</view>
+            <view class='book_author scroll-view-item_H' a:if="{{item.author != null}}">作者：{{item.author}}</view>
+          </navigator>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="booklist">
+    <view class='title'>
+      <view style='float:left'>{{quickbooks.name}}</view>
+      <navigator style='float:right' url='../component/books/books?subject_id={{quickbooks.id}}'>
+        <view class="more">查看全部</view>
+      </navigator>
+      <view style='clear:both'></view>
+    </view>
+    <view class="section page-section">
+      <scroll-view class="scroll-view_H" scroll-x="{{true}}" style="width: 100%;">
+        <view class="flex-wrp">
+          <navigator class="book-item" style='float:left' a:for="{{quickbooks.bookList}}" a:key="id" url="../component/bookDetails/bookDetails?book_id={{item.id}}">
+            <image class="book_image scroll-view-item_H" src="{{item.coverimg}}" onError="errorCoverimgQuickbooks" data-errorimg="{{index}}"></image>
+            <view class='book_name scroll-view-item_H'>{{item.title}}</view>
+            <view class='book_author scroll-view-item_H' a:if="{{item.author == null}}">作者：暂无数据{{item.author}}</view>
+            <view class='book_author scroll-view-item_H' a:if="{{item.author != null}}">作者：{{item.author}}</view>
+          </navigator>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="booklist">
+    <view class='title'>
+      <view style='float:left'>推荐书单</view>
+      <navigator style='float:right' url="../component/listOfBook/listOfBook">
+        <view class="more" onTap="more">查看全部</view>
+      </navigator>
+      <view style='clear:both'></view>
+    </view>
+    <view class="section page-section">
+      <scroll-view class="scroll-view_H" scroll-x="{{true}}" style="width: 100%;">
+        <view class="flex-wrap2">
+          <navigator class="book-item2" a:for="{{subjectList}}" a:key="id" url="../component/books/books?subject_id={{subjectList[index].id}}">
+            <image class="book_image2" src="{{item.coverimg}}" data-errorimg="{{index}}"></image>
+            <view class="text">
+              <view class="name1">{{item.name}}</view>
+              <view class="name2">{{item.description}}</view>
+            </view>
+          </navigator>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+ </view>  

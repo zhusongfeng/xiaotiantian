@@ -1,0 +1,186 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;  
+}
+.topPic{
+  width: 750rpx;
+  height: 200rpx;
+  background: url(../../../image/head_02.jpg)
+}
+.topInfo{
+  width: 200rpx;
+  height: 40rpx;
+  display: flex;
+  margin: 80rpx auto;
+}
+.img{
+  width: 40rpx;
+  height: 40rpx;
+}
+.img image{
+  width: 100%;
+  height: 100%;
+}
+.topText{
+  font-size: 36rpx;
+  color: white;
+  padding-left: 15rpx;
+}
+.purchase{
+  width: 750rpx;
+  min-height: 410rpx;
+  background: white;
+  margin:32rpx 0;
+}
+.purchaseOrg{
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+  padding: 31rpx 0 0 31rpx;
+}
+.purchaseCon{
+  width: 686rpx;
+  display: flex;
+  min-height: 180rpx;
+  margin:0 auto;
+}
+.purchaseInfo{
+  width: 556rpx;
+  height: 180rpx;
+  display: flex;
+  margin-top: 31rpx;
+  border-bottom: 1px solid rgb(245,245,245);
+}
+.purchaseLeft{
+  width: 180rpx;
+  height: 100%;
+}
+.purchaseLeft image{
+  width: 144rpx;
+  height: 170rpx;
+}
+.purchaseMiddle{
+  width: 400rpx;
+  height: 100%;
+}
+.bookTitle{
+  max-height: 80rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: rgb(51,51,51);
+  padding-bottom: 15rpx;
+}
+.bookAuthor,.bookIsbn{
+   font-size: 26rpx;
+  line-height: 35rpx;
+  color: rgb(153,153,153);
+}
+.purchaseRight{
+  width: 130rpx;
+  height: 180rpx;
+  margin-top: 31rpx;
+}
+.bookPrice{
+  color: rgb(51,51,51);
+  font-size: 28rpx;
+  padding-left: 25rpx;
+  line-height: 40rpx;
+}
+.bookNum{
+  color: rgb(153,153,153);
+  font-size: 26rpx;
+  padding-left: 25rpx;
+  line-height: 35rpx;
+}
+.bottoms{
+  width: 686rpx;
+  min-height: 100rpx;
+  margin: 32rpx auto 0;
+}
+.discon{
+  min-height: 40rpx;
+}
+.discount{
+  width: 686rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.discount text{
+  color: rgb(51,51,51);
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+.pay{
+  text-align: right;
+}
+.pay text{
+  font-size: 28rpx;
+  line-height: 60rpx;
+  color: rgb(51,51,51);
+}
+.pay text:nth-of-type(2){
+  color: rgb(230,75,18)
+}
+.details{
+  width: 750rpx;
+  height: 282rpx;
+  margin-bottom: 32rpx;
+  background: white;
+}
+.btn{
+  width: 750rpx;
+  height: 100rpx;
+  background: white;
+  display: flex;
+}
+.delete{
+  width:240rpx;
+  height: 100rpx;
+}
+.deleteImg{
+  width: 40rpx;
+  height: 40rpx;
+  margin:30rpx auto;
+}
+.deleteImg image{
+  width: 100%;
+  height: 100%;
+}
+.service{
+  width: 510rpx;
+  height: 100%;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: white;
+  background: rgb(230,75,18);
+}
+.orderTitle{
+  display: flex;
+  margin-top: 33rpx;
+  margin-left: 32rpx;
+  margin-bottom: 20rpx;
+  border-left: 4rpx solid rgb(230,75,18);
+}
+.orderTitle view{
+  font-size: 28rpx;
+  padding-left: 10rpx;
+  color: rgb(51,51,51);
+}
+.orderNum{
+  display: flex;
+  justify-content: space-between;
+}
+.orderNum text:nth-of-type(2){
+  color: rgb(230,75,18);
+  padding-right: 32rpx;
+}
+.orderNum,.orderTime,.orderpPay,.orderBank{
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+  line-height: 45rpx;
+  margin-left: 32rpx;
+}

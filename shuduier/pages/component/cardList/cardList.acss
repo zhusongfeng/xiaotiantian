@@ -1,0 +1,82 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;  
+}
+.cardList{
+  width:686rpx;
+  height:380rpx;
+  background: white;
+  border-radius: 20rpx;
+  margin:32rpx;
+  overflow: hidden;
+}
+.cardList1{
+  width:686rpx;
+  height:380rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  margin-bottom: 32rpx;
+  position: relative;
+}
+.cardPic{
+  width:120rpx;
+  height:120rpx;
+  margin:100rpx auto 35rpx;
+}
+.cardPic image{
+  width:100%;
+  height:100%;
+}
+.cardWord{
+  text-align: center;
+  font-size: 34rpx;
+  color: rgb(204,204,204);
+}
+.cardBg{
+  width:686rpx;
+  height:380rpx;
+}
+.cardName{
+  color: rgb(72,81,87);
+  font-size: 32rpx;
+  line-height: 50rpx;
+  z-index: 153;
+  position: absolute;
+  top: 37rpx;
+  left: 180rpx;
+}
+.cardItem{
+  color: rgb(72,81,87);
+  font-size: 32rpx;
+  position: absolute;
+  bottom: 37rpx;
+  left:0rpx;
+  width: 686rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  justify-content: space-between;
+  display: flex;
+}
+.cardNum{
+  padding-left: 20rpx;
+}
+.unbind_bt{
+   padding-right: 20rpx;
+}
+.mask{
+  width:686rpx;
+  height:380rpx;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 111;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.cardStatus{
+  font-size: 60rpx;
+  text-align: center;
+  line-height: 380rpx;
+}

@@ -1,0 +1,173 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box; 
+}
+.head{
+  width:750rpx;
+  height:280rpx;
+  background: url(../../../image/head_02.jpg);
+}
+page{
+  height:100%;
+  background: white;
+}
+.headPic{
+  width: 120rpx;
+  height: 120rpx;
+  margin:40rpx auto 20rpx;
+  border-radius: 50%;
+  background: white;
+}
+.headPic image{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+.loginhead{
+  color: rgba(245,245,245,0.8);
+  font-size: 28rpx;
+  text-align: center;
+  z-index: 102;
+}
+.bookNum{
+  color: rgb(245,245,245);
+  font-size: 28rpx;
+  line-height: 38rpx;
+  text-align: center;
+}
+.lists{
+  width:750rpx;
+  height:150rpx;
+  background: white;
+  display: flex;
+}
+.listsOne{
+  width:187.5rpx;
+  height: 100%;
+}
+.imgs{
+  width:50rpx;
+  height:50rpx;
+  margin-top:37rpx;
+  margin-left:70rpx;
+}
+.imgs image{
+  width:100%;
+  height:100%;
+}
+.text{
+  color: rgb(51, 51, 51);
+  font-size: 24rpx;
+  text-align: center;
+  padding-top:15rpx;
+  padding-left:10rpx;
+}
+.notices{
+  width:750rpx;
+  box-shadow: 0 0 3rpx #dddddd;
+}
+.swiper-tab{  
+  width:750rpx; 
+  height: 100rpx;
+  border-top: 2rpx solid #eee; 
+  border-bottom: 2rpx solid #eee;  
+  text-align: center;  
+  line-height: 100rpx;
+  background: #fff;
+  font-size: 14px;
+}  
+.on{ 
+  color: #dd2727;  
+  border-bottom: 5rpx solid #dd2727;
+}  
+.swiper-tab-list{  
+  font-size: 29rpx;  
+  display: inline-block;  
+  width: 49.5%;  
+  color: #333; 
+}
+.swiper-box{
+  display: block;
+  min-height:600rpx;
+  width: 750rpx;
+}
+.info{
+  width:686rpx;
+  display: flex;
+  margin:10rpx auto 20rpx;
+  flex-wrap: wrap;
+}
+.yindao{
+  text-align: center;
+  font-size:24rpx;
+  padding:10rpx 0;
+  color: rgb(153, 163, 153);
+}
+.bookPic{
+  width:180rpx;
+  height: 310rpx;
+  margin:0 22rpx;
+  overflow: hidden;
+}
+.picImg{
+  width:180rpx;
+  height: 200rpx;
+}
+.picImg image{
+  width:100%;
+  height:100%;
+}
+.bookTitle{
+  width:100%;
+  height:30rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+  margin-top:5rpx;
+  color: rgb(51, 51, 51);
+  line-height: 33rpx;
+}
+.kuaidi_follow{
+  width: 100%;
+  background: #fff;
+  padding: 0 50rpx;
+  box-sizing: border-box;
+}
+.follow_satus{
+  border-left: 1rpx solid #d5d5d5;   
+}
+.follow_satus .follow_address{
+  margin: 0 20rpx;
+  padding-bottom: 25rpx;
+  position: relative;
+}
+.follow_satus .follow_address .address{
+  line-height: 40rpx;
+  font-size: 26rpx;
+}
+.follow_satus .follow_address .date{
+  font-size: 24rpx;
+}
+.follow_satus .follow_address .label{
+  width: 15rpx;
+  height: 15rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: -30rpx;
+  top: -5rpx;
+  background: rgb(179,179,179);
+}
+.follow_satus .follow_address .label.default{
+  background: rgb(179,179,179);
+}
+.follow_satus .follow_address .default{
+  color: rgb(179,179,179);
+ }
+ .desc{
+  text-align: center;
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  color: rgb(51, 51, 51);
+ }

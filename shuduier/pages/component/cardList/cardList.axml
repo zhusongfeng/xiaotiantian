@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="cardList">
+    <navigator class="cardPic" url="../tieCard/tieCard"><image src="../../../image/card_03.png" /></navigator>
+    <view class="cardWord">立即绑定/在线办证</view>
+  </view>
+  <view class="cardList1" a:for="{{readercardList}}" a:key="{{cardno}}" onTap='back'
+     data-singleLogo='{{item.singleLogo}}' data-cardno='{{item.cardno}}' data-orgname='{{item.name}}' data-readercard_id='{{item.id}}'>
+    <image class="cardBg" src="../../../image/card.png"/>
+    <view class="cardName">
+      <view>{{item.name}}</view>
+    </view>
+    <view class="cardItem">
+      <view class="cardNum">{{item.cardno}}</view>
+      <view class='unbind_bt' onTap='unBinding' a:if='{{!isback}}' data-readercard_id='{{item.id}}'>解除绑定</view>
+    </view>
+    
+  </view>
+   <view a:for="{{ecardorderList}}" a:key="id">
+     <view class="cardList1" onTap="statusSuccess" a:if="{{item.status==1||item.status==4}}" data-id="{{item.id}}">
+        <image class="cardBg" src="../../../image/card.png"/>
+        <view class="mask">
+          <view class="cardStatus" a:if="{{item.status==1}}">待审核</view>
+          <view class="cardStatus" a:if="{{item.status==4}}">审核拒绝</view>
+        </view>
+      </view>
+   </view>
+</view>

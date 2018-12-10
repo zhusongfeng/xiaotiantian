@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="navView" onTap="tigger" data-num="0">Q：如何绑定读者卡/在线办证?</view>
+  <view class="classname" hidden="{{showArr[0]}}">
+    <view class="conts"><image src="../../../image/details.png" /></view>
+  </view>
+  <view class="navView" onTap="tigger" data-num="1">Q：网上借书收费吗?</view>
+  <view class="classname" hidden="{{showArr[1]}}">
+    <view class="conts1">A：通过书堆儿APP/小程序/心愿书房借阅图书是不收取任何费用的，免费快递到家。</view>
+  </view>
+  <view class="navView" onTap="tigger" data-num="2">Q：网上借书一般多久可以送到?</view>
+  <view class="classname" hidden="{{showArr[2]}}">
+    <view class="conts1">A：一般情况2到3天，若本地暂无库存，需单独采购，时间会延长，具体请咨询客服热线 400-128-0528。</view>
+  </view>
+  <view class="navView" onTap="tigger" data-num="3">Q：网上借书借阅时间如何计算?</view>
+  <view class="classname" hidden="{{showArr[3]}}">
+    <view class="conts1">A：借阅时间以编目完成时间开始计算(即收到快递前一两天)，借阅周期/续借周期以各个图书馆规定为准。</view>
+  </view>
+  <view class="navView" onTap="tigger" data-num="4">Q：读者证密码是多少?</view>
+  <view class="classname" hidden="{{showArr[4]}}">
+    <view class="conts1">A：读者证默认密码各个图书馆不同，例如宝鸡市图书馆默认密码为身份证出生年月日后6位；铜川图书馆默认密码为卡号后六位；汉中图书馆默认密码为身份证的后六位；泾阳县图书馆默认密码办完卡后自动生成密码。读者证密码暂不支持在线修改，如需修改请至图书馆。</view>
+  </view>
+  <view class="navView" onTap="tigger" data-num="5">Q：为什么我无法在线借阅图书?</view>
+  <view class="classname" hidden="{{showArr[5]}}">
+    <view class="conts1">A：为保证您能快速顺利收到图书，需要您在编目完成前保证您的读者证留有空位，若读者证被借满，线上所借图书将无法在系统操作借出。</view>
+  </view>
+  <view class="navView" onTap="tigger" data-num="6">Q：积分有什么用?</view>
+  <view class="classname" hidden="{{showArr[6]}}">
+    <view class="conts1">A：积分可以在积分商城免费兑换相应的礼品。小程序暂不支持兑换，如需兑换请前往书堆儿APP。</view>
+  </view>
+  <view class="btns">
+    <view class="texts"><text>如果以上回答还是不能解决您的问题，或者您在使用过程中有任何疑问和建议，请及时与我们客服联系</text><text> 400-128-0528 !</text></view>
+  </view>
+</view>

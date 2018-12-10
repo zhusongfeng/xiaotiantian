@@ -1,0 +1,87 @@
+<view class="container">
+  <view class="navigatorBarGroup">
+    <view class="navigatorBaritem lists {{tab==0 ? 'on' : ''}}" data-current="0" data-status="-1" onTap="tab_click">全部</view>
+    <view class="navigatorBaritem lists {{tab==1 ? 'on' : ''}}" data-current="1" data-status="0" onTap="tab_click">待审核</view>
+    <view class="navigatorBaritem lists {{tab==2 ? 'on' : ''}}" data-current="2" data-status="6,7,1" onTap="tab_click">采购中</view>
+    <view class="navigatorBaritem lists {{tab==3 ? 'on' : ''}}" data-current="3" data-status="2" onTap="tab_click">待收货</view>
+    <view class="navigatorBaritem lists {{tab==4 ? 'on' : ''}}" data-current="4" data-status="3" onTap="tab_click">待归还</view>
+    <view class="page">
+      <view class="page_bd">
+        <view class="body_head" onTap="showitem">筛选</view>
+        <view class="{{open?'display_show':'display_none'}}">
+          <view class="mask">
+            <view class="screen">
+              <view class="screenContent">
+                <view class="screenTitle">借阅方式</view>
+                <!-- <button type="" class="screenWarn" onTap="changeColor4" style="color:{{color4}}">书堆儿 APP/小程序</button> -->
+                <view class="twoBtn">
+                  <button type="" class="screenWarn" onTap="changeColor5" style="color:{{color5}}">图书馆/心愿书房</button>
+                </view>
+              </view> 
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="swiper-box" duration="300" > -->
+    <!-- <swiper-item > -->
+      <view class="content">
+        <view class="infors" a:if="{{tab==2 && !isShowLogin}}">
+          <text>您借阅的图书正在采购中，一般需要1-2天，如遇缺货时间将延长。</text>
+        </view>
+        <view a:if="{{borrowList==null||borrowList==''||isShowLogin}}">
+          <view class="notMsg">
+            <image src="../../../image/empt.png"></image>
+            <view a:if="{{isShowLogin}}" class='logins' onTap='loginIn'>您尚未登录，<text>请先登录</text></view>            
+            <view a:else>您当前还没有此状态下的任何借阅信息</view>
+          </view>
+        </view>      
+        <view a:if="{{!isShowLogin}}" class="allOrder" a:for="{{borrowList}}" a:key="id">
+          <view a:if="{{borrowList!=null||borrowList!=''}}">
+            <view class="orderDetail">
+              <view class="titles">
+                <view class="libraryName">{{item.org_name}}</view>
+                <navigator class="rightList" url='../allOrder/examine/examine?borror_id={{borrowList[index].id}}'>
+                  <view class="statusName">{{item.statusStr}}</view>
+                  <view class='mine_list1'>
+                    <view class="imgs">
+                      <image class="mine1" src="../../../image/jiantou.png"></image>
+                    </view>
+                  </view>
+                </navigator>
+              </view>
+              <view class="bookItems">
+                <view class="book_images">
+                  <image src="{{item.coverimg}}" onError="errorCoverimg" data- errorimg="{{index}}"></image>
+                </view>
+                <view class="orderList">
+                  <view class='book_names1'>{{item.title}}</view>
+                  <view class='book_authors1'>作者：{{item.author}}</view>
+                  <view class='book_presss1 '>国际标准书号ISBN：{{item.isbn}}</view>
+                </view>
+              </view>
+              <view class="btns" a:if="{{item.status==5||item.status==4}}">
+                <view class="btn" data-id='{{item.id}}' onTap="cancels">删除订单</view>
+              </view>
+              <view class="btns" a:if="{{item.status==2}}">
+                <navigator class="btn" url="../logistics/logistics? expressorder_id={{borrowList[index].expressorder_id}}">查看物流</navigator>
+                <view class="btn1" data-id='{{item.id}}' onTap="collectionGoods">确认收货</view>
+              </view>
+              <view class="btns" a:if="{{item.status==0}}">
+                <view class="btn" data-id='{{item.id}}' onTap="canaelOrder">取消订单</view>
+              </view>
+              <view class="btns" a:if="{{item.status==3}}">
+                <view class="btn" data-id='{{item.id}}' onTap="borrowBook">续借图书</view>
+                <view class="btn1" data-id='{{item.id}}' onTap="returnBook">确认归还</view >
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    <!-- </swiper-item>     -->
+    <!-- <swiper-item>
+      
+    </swiper-item>
+  </view>  -->
+</view>

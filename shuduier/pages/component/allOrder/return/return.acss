@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box; 
+}
+
+.head{
+  font-size: 32rpx;
+  padding: 20rpx 0;
+}
+.content{
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;  
+}
+.allOrder{
+  width:686rpx;
+  min-height:320rpx;
+  box-shadow: 0 0 34rpx #ededed;
+  background: white;
+  border-radius: 6rpx;
+  margin:0 auto 32rpx;
+}
+.orderList{
+  width:686rpx;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+}
+.book_names1 {
+  width: 686rpx;
+  height: 50rpx;
+  color:rgb(51,51,51);
+  font-size: 28rpx;
+  line-height: 50rpx;
+  overflow: hidden;
+  padding-left:20rpx;
+}
+.book_authors1,.book_presss1{
+  color:rgb(153,153,153);
+  font-size: 28rpx;
+  line-height:40rpx;
+  padding-left:20rpx;
+}
+.notMsg{
+  font-size: 28rpx;
+  line-height:40rpx;
+}
+.libraryName,.libraryName1{
+  font-size: 28rpx;
+}
+.library{
+  display: flex;
+  justify-content: space-between;
+}
+.message{
+  font-size: 30rpx;
+  color: rgb(51,51,51);
+  
+}

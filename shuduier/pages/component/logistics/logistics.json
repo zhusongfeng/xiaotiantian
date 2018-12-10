@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "书堆儿",
+   "usingComponents": {
+    "steps": "../../../node_modules/mini-antui/es/steps/index"
+  }
+}

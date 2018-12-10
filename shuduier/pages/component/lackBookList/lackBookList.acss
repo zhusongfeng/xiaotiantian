@@ -1,0 +1,101 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;  
+}
+.allOrder{
+  width:686rpx;
+  height:350rpx;
+  border-radius: 8rpx;
+  background: white;
+  margin:32rpx auto 0;
+}
+.orderDetail{
+  width:622rpx;
+  height:286rpx;
+  position: relative;
+  margin:32rpx;
+  padding-top: 32rpx;
+}
+.titles{
+  width:100%;
+  height:45rpx;
+  margin-bottom:10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.libraryName{
+  color:rgb(51,51,51);
+  font-size: 28rpx;
+  float: left;
+}
+.statusName{
+  color:rgb(230,75,18);
+  font-size: 27rpx;
+}
+.mine_list1{
+  width:50rpx;
+  height:40rpx;
+}
+.bookItems{
+  width:100%;
+  height:150rpx;
+}
+.bookItems::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.bookItems image{
+  width:104rpx;
+  float: left;
+  height:150rpx; 
+}
+.orderList{
+  width:477rpx;
+  padding-left:32rpx;
+  float:left;
+}
+.book_names1 {
+  color:rgb(51,51,51);
+  font-size: 30rpx;
+  line-height: 40rpx;
+}
+.book_authors1,.book_presss1{
+  color:rgb(153,153,153);
+  font-size: 30rpx;
+   line-height: 40rpx;
+}
+.notices{
+  font-size: 26rpx;
+  color: rgb(51, 51, 51);
+  padding-left:-104rpx;
+  padding-top:32rpx;
+}
+
+.btns{
+  min-width:144rpx;
+  height:50rpx;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  right:0;
+}
+.btn,.btn1{
+  width:144rpx;
+  height:50rpx;
+  border:1px solid rgb(230,75,18);
+  font-size: 26.5rpx;
+  text-align: center;
+  border-radius: 4rpx;
+  line-height: 50rpx;
+  margin-left:20rpx;
+  color: rgb(230,75,18);
+}
+.lack{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+}

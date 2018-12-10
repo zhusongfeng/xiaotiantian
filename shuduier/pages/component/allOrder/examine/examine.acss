@@ -1,0 +1,167 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box; 
+}
+.head{
+  width:750rpx;
+  height:200rpx;
+  background: url(../../../../image/head_02.jpg);
+}
+.descript{
+  color:rgb(245,245,245);
+  font-size: 28rpx;
+  line-height: 35rpx;
+  padding:47rpx 64rpx 87rpx 64rpx;
+}
+.content{
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;  
+  background-color: #ededed; 
+}
+.allOrder{
+  width:100%;
+  height:350rpx;
+  background: white;
+  margin:32rpx auto;
+}
+.orderDetail{
+  height:286rpx;
+  margin:32rpx;
+  position: relative;
+}
+.titles{
+  width:100%;
+  height:45rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:10rpx;
+}
+.images{
+  width:27rpx;
+  height: 29rpx;
+}
+.images image{
+  width: 100%;
+  height: 100%;
+}
+.libraryName{
+  color:rgb(51,51,51);
+  font-size: 28rpx;
+  float: left;
+}
+
+.bookItems{
+  width:100%;
+  height:150rpx;
+  padding-bottom: 35rpx;
+}
+.bookItems::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.bookItems image{
+  width:104rpx;
+  float: left;
+  height:150rpx; 
+}
+.orderList{
+  width:477rpx;
+  padding-left:32rpx;
+  float:left;
+}
+.book_names1 {
+  max-height: 80rpx;
+  color:rgb(51,51,51);
+  font-size: 28rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+}
+.book_authors1,.book_presss1{
+  color:rgb(153,153,153);
+  font-size: 26.5rpx;
+  line-height:40rpx;
+}
+.btns{
+  min-width:144rpx;
+  height:50rpx;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -15rpx;
+  right:0;
+}
+.btn,.btn1{
+  width:144rpx;
+  height:50rpx;
+  background: white;
+  border:1px solid rgb(230,75,18);
+  font-size: 26.5rpx;
+  text-align: center;
+  border-radius: 4rpx;
+  line-height: 50rpx;
+  margin-left:20rpx;
+  z-index: 150;
+  color: rgb(230,75,18);
+}
+.inforMessage{
+  width:100%;
+  min-height:364rpx;
+  background: white;
+}
+.topMessage{
+  width:100%;
+  min-height:274rpx;
+}
+.orderTitle{
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+}
+.orderNum,.orderTime,.orderLibrary,.orderAddress{
+  font-size: 26rpx;
+  padding-left:32rpx;
+  color:rgb(153,153,153);
+  line-height: 48rpx;
+}
+.bottomMessage{
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+  text-align: center;
+  line-height: 80rpx;
+  border-top:1px solid #dddddd;
+  border-bottom:1px solid #dddddd;
+}
+.orders{
+  width:100%;
+  height:50rpx;
+  display: flex;
+}
+.orderCopy{
+  line-height: 48rpx;
+  font-size: 26rpx;
+  color:rgb(230,75,18);
+  padding-left: 300rpx;
+}
+.titles1{
+  padding-top:25rpx;
+  display: flex;
+  padding-left: 32rpx;
+}
+.libraryName1{
+ width:8rpx;
+ height: 28rpx;
+ background: rgb(230,75,18);
+}
+.statusName{
+  color:rgb(51,51,51);
+  font-size: 28rpx;
+  padding-left:10rpx;
+}

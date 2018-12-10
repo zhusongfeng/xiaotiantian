@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="cardPic">
+    <view class="title">交￥{{ecardFee}}元押金</view>
+    <view class="info">押金说明：在线办理读者证需支付押金，线上办理读者证与图书馆办理读者证的金额一致，平台会为您开具押金收据。办理退卡时，押金金额会全额退还。</view>
+    <view class="btn" onTap="click">立即支付</view>
+  </view>
+  <!-- <view class="cardPic">
+    <view class="title">支付宝免押金</view>
+    <view class="info">不想交押金，试试支付宝免押金服务吧，只要芝麻信用分≥600分就可以免押金办理，点击下面按钮即可申请办理。</view>
+    <view class="btn">立即支付</view>
+  </view> -->
+</view>

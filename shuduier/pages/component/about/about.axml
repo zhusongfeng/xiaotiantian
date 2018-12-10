@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="head">
+    <view class="logo">
+      <image src="../../../image/logo.png"/>
+    </view>
+    <view class="edition">版本：2.2.35</view>
+  </view>
+  <navigator class="lists" url="../privacy/privacy">
+    <view class='cardNum'>
+      <view class="helps">隐私协议</view>
+    </view>
+    <view class="cardPic">
+      <image src="../../../image/back.png" />
+    </view>
+  </navigator>
+  <navigator class="lists"  url="../disclaimer/disclaimer">
+    <view class='cardNum'>
+      <view class="helps">免责声明</view>
+    </view>
+    <view class="cardPic">
+      <image src="../../../image/back.png" />
+    </view>
+  </navigator>
+   <view class="lists">
+    <view class='cardNum'>
+      <view class="helps">点击分享</view>
+    </view>
+    <button type="" open-type="share" class="btn" hover-class="btn-hover"></button>
+    <view class="cardPic">
+      <image src="../../../image/back.png"/>
+    </view>
+  </view>
+  <view class="footers">
+    <view>西安青果信息技术服务有限公司</view>
+    <view>2017-2018 XIAN QINGGUO.ALL RIGHT RESERVED</view>
+  </view>
+</view>

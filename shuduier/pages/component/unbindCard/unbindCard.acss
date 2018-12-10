@@ -1,0 +1,100 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;  
+}
+.cardList{
+  width:750rpx;
+  height:224rpx;
+  background: white;
+}
+.cardTop{
+  width:100%;
+  height:224rpx;
+  display: flex;
+}
+.cardLeft{
+  width:264rpx;
+  height:100%;
+}
+.cardRight{
+  width:486rpx;
+  height:100%;
+}
+.imgs{
+  width:184rpx;
+  height:144rpx;
+  margin:40rpx;
+}
+.imgs image{
+  width:100%;
+  height:100%;
+}
+.cardTitle{
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+  padding:60rpx 0 12rpx;
+  font-weight: bold;
+}
+.cardName{
+  font-size: 24rpx;
+  line-height: 35rpx;
+  color: rgb(51,51,51);
+}
+.lists{
+  width:750rpx;
+  height:600rpx;
+  margin:32rpx 0;
+}
+.sdr-tableviewcell{
+  display: flex;
+  -webkit-align-items:center;
+}
+.cardNum{
+  width:750rpx;
+  height:100rpx;
+  background: white;
+  border-bottom:1px solid #dddddd;
+}
+.cardNum .sdr-tableviewcell_label{
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+  line-height: 100rpx;
+  padding-left:34rpx;
+  display: flex;
+}
+.sdr-tableviewcell_input{
+  width:550rpx;
+  padding-left:30rpx;
+  color: rgb(153,153,153);
+}
+.intro{
+  width:750rpx;
+  background: white;
+  margin-bottom: 32rpx;
+}
+.cardNum1 .sdr-tableviewcell_label{
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+  padding-left:34rpx;
+  display: flex;
+}
+.sdr-tableviewcell_input1{
+  width:550rpx;
+  font-size: 24rpx;
+  text-align: left;
+  line-height: 30rpx;
+  color: rgb(153,153,153);
+  padding:25rpx 0 25rpx 30rpx;;
+}
+.btns{
+  width:750rpx;
+  height:100rpx;
+  background: rgb(213,86,43);
+  color: white;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+}

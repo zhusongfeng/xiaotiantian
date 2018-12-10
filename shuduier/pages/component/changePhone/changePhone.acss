@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.page-section{
+  width: 750rpx;
+  height:100rpx;
+  display: flex;
+  background: white;
+  border-bottom:1px solid #ededed;
+}
+.names{
+  width:140rpx;
+  padding-left:34rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: rgb(51, 51, 51);
+  text-align: left;
+}
+.inps{
+  width:350rpx;
+  line-height: 100rpx;
+  padding-top: 15rpx;
+  padding-left:15rpx;
+}
+.code{
+  width:204rpx;
+  border:1px solid rgb(213,86,43);
+  color: rgb(213,86,43);
+  border-radius: 4rpx;
+  height:50rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  text-align: center;
+  margin-top:18rpx;
+}
+.btn{
+  width: 540rpx;
+  height:100rpx;
+  margin:50rpx auto;
+  background: rgb(213,86,43);
+  color: white;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius: 6rpx;
+}
+.nums{
+  font-size: 44rpx;
+  line-height: 100rpx;
+  margin-top:-15rpx;
+}
+.weui-input{
+  font-size: 30rpx;
+}

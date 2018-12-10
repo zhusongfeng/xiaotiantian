@@ -1,0 +1,60 @@
+.container{
+  width:100%;
+  box-sizing: border-box;
+}
+page{
+  height: 100%;
+  background: white;
+}
+.title{
+  font-size: 36rpx;
+  margin-top: 100rpx;
+  margin-bottom: 40rpx;
+}
+.tab{
+  width:750rpx;
+  height: 100rpx;
+  display: flex;
+  border-top:1px solid rgb(237,237,237);
+}
+.leftTab{
+  width:20%;
+  height:100rpx;
+  line-height:100rpx;
+  text-align: right;
+}
+.leftTab text:nth-child(1){
+  color: rgb(213, 86, 43);
+}
+.leftTab text:nth-child(2){
+  color: rgb(51,51,51);
+  font-size: 32rpx;
+}
+.rightTab{
+  width:80%;
+  height:100rpx;
+}
+.inps{
+  color: rgb(51,51,51);
+  height:89rpx;
+  font-size:32rpx;
+  padding-left:20rpx;
+}
+.tabs{
+  border-bottom:1px solid rgb(237,237,237);
+}
+.info{
+  font-size: 27rpx;
+  color: rgb(213,86,43);
+  line-height: 38rpx;
+  padding:32rpx 0;
+}
+.big_bt{
+  width: 540rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  background: rgb(213,86,43);
+  text-align: center;
+  margin: 50rpx auto;
+}
